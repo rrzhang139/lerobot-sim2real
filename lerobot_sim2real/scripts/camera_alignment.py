@@ -122,6 +122,7 @@ def on_key_release(event):
 
 def main(args: Args):
     real_robot = create_real_robot(uid="so100")
+    # breakpoint()
     real_robot.connect()
     real_agent = LeRobotRealAgent(real_robot)
 

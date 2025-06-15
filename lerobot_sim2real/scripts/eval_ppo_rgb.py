@@ -21,6 +21,8 @@ from mani_skill.utils.wrappers.record import RecordEpisode
 from tqdm import tqdm
 from mani_skill.utils.visualization import tile_images
 import matplotlib.pyplot as plt
+
+import lerobot_sim2real.envs.push_cube
 @dataclass
 class Args:
     checkpoint: Optional[str] = None

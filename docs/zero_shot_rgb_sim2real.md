@@ -17,6 +17,10 @@ This tutorial was written by [Xander Hinrichsen](https://www.linkedin.com/in/xan
 
 Note that whenever you see some command line/script, in this codebase you can always add `--help` to get more information and options.
 
+## 0: Configure your LeRobot setup
+
+First you should update the `lerobot_sim2real/config/real_robot.py` file to match your own configuration setup. You might need to change how the camera is setup and the ID of the robot. This allows the rest of the code to be able to control the real robot.
+
 ## 1: Setup your simulation and real world environment
 
 We provide a pre-built [simulation environment called SO100GraspCube-v1](https://github.com/haosulab/ManiSkill/tree/main/mani_skill/envs/tasks/digital_twins/so100_arm/grasp_cube.py) that only needs a few minor modifications for your own use. If you are interested in making your own environments to then tackle via sim2real reinforcement learning we recommend you finish this tutorial first, then learn how to [create custom simulated tasks in ManiSkill](https://maniskill.readthedocs.io/en/latest/user_guide/tutorials/custom_tasks/index.html), then follow the tutorial on how to [design them for sim2real support](https://maniskill.readthedocs.io/en/latest/user_guide/tutorials/custom_tasks/index.html)
